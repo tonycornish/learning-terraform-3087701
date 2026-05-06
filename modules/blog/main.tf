@@ -96,7 +96,7 @@ instance_type        = var.instance_type
 image_id             = data.aws_ami.app_ami.id
 
 traffic_source_attachments = {
-  ${va.environmnet.name}-blog_alb = {
+  "${va.environmnet.name}-blog_alb" = {
     traffic_source_identifier = aws_lb_target_group.blog.arn
   }
  }
