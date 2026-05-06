@@ -91,7 +91,7 @@ max_size = 2
 vpc_zone_identifier = module.blog_vpc.public_subnets
 
 launch_template_name = "blog"
-security_groups      = [module.blog_sg.vpc_security_group_id]
+security_groups      = [module.blog_sg.security_group_id]
 instance_type        = var.instance_type 
 image_id             = data.aws_ami.app_ami.id
 
