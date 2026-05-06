@@ -18,8 +18,8 @@ variable "ami_filter" {
 
 
 
-variable "environmnet" {
-  description = "Deployment environmnet"
+variable "environment" {
+  description = "Deployment environment"
   type = object ({
     name           = string
     network_prefix = string

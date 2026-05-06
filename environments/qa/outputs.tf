@@ -1,3 +1,3 @@
-output "environmnet_url" {
-    value = module.qa.environmnet_url
+output "environment_url" {
+    value = module.qa.environment_url
 }
